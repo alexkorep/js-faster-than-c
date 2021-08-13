@@ -1,5 +1,8 @@
-// gcc -Wall -O3 hello.c g.c -o hello
-extern unsigned int g (void);
+// To compile
+// gcc -Wall -O3 hello.c -o hello
+// To profile:
+// time ./hello
+unsigned int g (void) { return 1; }
 
 unsigned int (*fun_ptr)(void) = &g;
 

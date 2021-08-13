@@ -1,4 +1,9 @@
-const g = require('./g');
+// To profile:
+// time node ./hello.js
+
+const g = () => {
+  return 1;
+}
 
 const fun_ptr = g;
 
