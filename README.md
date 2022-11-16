@@ -3,7 +3,7 @@
 ## How to benchmark C app
 
 ```
-gcc -Wall -O3 hello.c -o hello
+gcc -Ofast -flto ./hello.c -o hello
 time ./hello
 ```
 
