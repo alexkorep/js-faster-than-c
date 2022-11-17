@@ -3,7 +3,7 @@
 ## How to benchmark C app
 
 ```
-gcc -Ofast -flto ./hello.c -o hello
+gcc -Wall -O3 -flto hello.c -o hello
 time ./hello
 ```
 
@@ -17,7 +17,9 @@ time node ./hello.js
 
 ![benchmarking](profile-screenshot.png "Benchmarking screenshot")
 
-- C, seconds: `38.154 total`
-- JS, seconds: `37.332 total`
+- C, seconds: `37.762 total`
+- JS, seconds: `36.996 total`
 
-Tested on MacBook Pro (13-inch, M1, 2020), MacOS version 11.5 (20G71), 16 GB RAM
+Tested on MacBook Air (13-inch, M1, 2020), MacOS version 12.6 (21G115), 8 GB RAM
+Node.js v16.13.1
+GCC Apple clang version 14.0.0 (clang-1400.0.29.102)
